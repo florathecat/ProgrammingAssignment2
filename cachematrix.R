@@ -1,9 +1,10 @@
 ## makeCacheMatrix sets a matrix (x), gets a matrix, sets the inverse of the matrix, and gets the inverse of the matrix
 ## cacheSolve checks to see if the inverse of x is in the cache. If so, it retrieves it with a message; if not, it calculates it.
 
-## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
+  ## replacing in machVector sample script with the following
+  ## m -> x_inv, function(mean) -> function(solve)
+  ## setmean -> setinv; getmean -> getinv
   x_inv <- NULL
   set <- function(y) {
     x <<- y
@@ -19,10 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Return a matrix that is the inverse of 'x'
+  ## substitute in cachMean "m" with "x_inv", "setmean" with "setinv" and "getmean" with "getinv"      ## Return a matrix that is the inverse of 'x'
   x_inv <- x$getinv()
   if(!is.null(x_inv)) {
     message("getting cached data")
